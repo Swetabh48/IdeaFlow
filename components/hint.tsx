@@ -11,6 +11,7 @@ export interface HintProps {
     side?: "top" | "bottom" | "left" | "right";
     align?: "start" | "center" | "end";
     sideOffset?: number;
+    alignOffset?: number;
 }
 
 export const Hint = ({
@@ -19,6 +20,7 @@ export const Hint = ({
     side,
     align,
     sideOffset,
+    alignOffset,
 }: HintProps) => {
     return (
         <TooltipProvider>
@@ -30,9 +32,10 @@ export const Hint = ({
                     side={side}
                     align={align}
                     sideOffset={sideOffset}
+                    alignOffset={alignOffset}
                     className="text-white bg-black border-black"
                 >
-                    <p className="capitalize">
+                    <p className="font-semibold capitalize">
                         {label}
                     </p>
                 </TooltipContent>
