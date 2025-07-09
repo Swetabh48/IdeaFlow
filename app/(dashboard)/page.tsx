@@ -1,6 +1,6 @@
 const DashboardPage = () => {
     return (
-        <div>
+        <div className="bg-red-500 flex-1 h-[calc(100%-80px)] p-6">
             Dashboard Root page
         </div>
     );
