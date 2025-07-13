@@ -29,7 +29,8 @@ export const BoardList=({
     query.search = search ? search : "";
 
     const data = useQuery(api.boards.get, {
-        orgId
+        orgId,
+        ...query,
     });
     if(data===undefined){
         return(
