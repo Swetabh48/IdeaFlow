@@ -7,7 +7,7 @@ import { OrganizationSwitcher } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { LayoutDashboard, Star } from "lucide-react";
 import {useSearchParams} from "next/navigation";
-
+import React from 'react';
 
 const font=Poppins({
     subsets:["latin"],

@@ -1,5 +1,5 @@
 "use client";
-
+import React from 'react';
 import { useQuery } from "convex/react";
 import {api} from "@/convex/_generated/api";
 import { useSearchParams } from "next/navigation";
@@ -30,7 +30,8 @@ export const BoardList=({
 
     const data = useQuery(api.boards.get, {
         orgId,
-        ...query,
+        search: query.search,
+        favorites: query.favorites, 
     });
     if(data===undefined){
         return(
