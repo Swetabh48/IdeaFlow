@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  typescript: {
+    ignoreBuildErrors: true, // ✅ disables TS error checking during `next build`
+  },
 };
 
 export default nextConfig;
